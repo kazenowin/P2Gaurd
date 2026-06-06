@@ -2,7 +2,7 @@
 **Decentralized Anti-Piracy & AI-Driven Network Traffic Analysis Framework**
 
 ## 📖 Overview
-P2Guard is a full-stack proof-of-concept framework designed to detect unauthorized peer-to-peer (P2P) network traffic and verify digital licenses via blockchain. By combining deep learning for packet analysis with Ethereum smart contracts for zero-trust license verification, P2Guard offers a modernized approach to decentralized digital rights management.
+P2Guard is a full-stack proof-of-concept framework designed to detect unauthorized peer-to-peer (P2P) network traffic and verify digital licenses via blockchain. By combining deep learning for packet analysis with Ethereum smart contracts for zero-trust license verification, P2Guard offers a modernized approach to decentralized digital right management.
 
 ## 🏗️ System Architecture
 The framework is divided into three distinct operational layers:
