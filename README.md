@@ -32,27 +32,3 @@ The framework is divided into three distinct operational layers:
         ▼ (Base64 Image)
 [ React Dashboard: Render Telemetry & XAI Audit ]
 
-Setup for the Ledger Layer
-### 1. Blockchain & Wallet Setup (Ganache)
-Because this framework relies on smart contracts to verify licenses, you must run a local Ethereum blockchain to test the UI.
-
-**A. Start Your Local Blockchain**
-1. Download and install [Ganache](https://trufflesuite.com/ganache/).
-2. Click **Quickstart** to launch a local testnet. 
-3. Ensure your Ganache RPC Server is running on `http://127.0.0.1:7545` (this is the default).
-
-**B. Deploy the Smart Contract**
-1. Open [Remix IDE](https://remix.ethereum.org/) in your browser.
-2. Compile the `LicenseCheck.sol` contract provided in this repository.
-3. In Remix's "Deploy & Run Transactions" tab, change the Environment to **Dev - Ganache Provider** and connect to your `7545` port.
-4. Deploy the contract.
-5. **Action Required:** Copy the newly deployed Contract Address and paste it into `app.py` on **Line 34**:
-   `contract_address = web3.to_checksum_address('0xYOUR_CONTRACT_ADDRESS')`
-
-**C. Configure Frontend Wallets**
-To test the "Licensed" vs "Unlicensed" simulation buttons, you need to provide the frontend with two distinct wallet addresses from your Ganache instance.
-1. Open Ganache and look at the list of available accounts.
-2. **Action Required:** Open `p2guard-dashboard/src/App.jsx` and locate lines 5 and 6 at the top of the file.
-3. Copy **Address 1** from Ganache and paste it as the `WALLET_UNLICENSED` variable.
-4. Copy **Address 2** from Ganache and paste it as the `WALLET_LICENSED` variable.
-5. *(Optional for Full Simulation)*: Using Remix, interact with your deployed smart contract to manually grant a license to Address 2 so the backend successfully validates it during Scenario 2.
