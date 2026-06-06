@@ -33,7 +33,7 @@ try:
     web3 = Web3(Web3.HTTPProvider("http://127.0.0.1:6780")) # Ensure your port is correct!
     
     # !!! PASTE YOUR REMIX CONTRACT ADDRESS HERE !!!
-    contract_address = web3.to_checksum_address('0x5c4A58ee01eeBb1afA01B59154cC170F614AC343')
+    contract_address = web3.to_checksum_address('here')
     
     contract_abi = [{
         "inputs": [{"internalType": "address", "name": "_user", "type": "address"}],
