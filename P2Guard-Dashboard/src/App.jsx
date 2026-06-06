@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 function App() {
   // --- PASTE YOUR GANACHE ADDRESSES HERE ---
-  const WALLET_UNLICENSED = "0x14420f537057606f97AF35714bF2b7a8060C1F1b"; 
-  const WALLET_LICENSED = "0x1467B20D296b00519628343E6F333E5710504724";   
+  const WALLET_UNLICENSED = "here1"; 
+  const WALLET_LICENSED = "here2";   
 
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
